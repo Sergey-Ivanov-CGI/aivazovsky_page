@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header" aria-label="header">
     <div class="container">
       <nav class="nav" aria-label="header navigation">
@@ -37,7 +39,54 @@
       </nav>
     </div>
   </header>
+
+  <!-- BURGER MENU -->
+  <div class="mobile-navigation" aria-label="mobile navigation">
+    <label for="toggler-id" aria-label=" open close mobile navigation menu">
+
+      <!-- BURGER ICON -->
+      <svg class="mobile-navigation-burger" aria-label="burger icon">
+        <use href="assets/sprites.svg#burger-icon"></use>
+      </svg>
+    </label>
+
+    <!-- CHECKBOX -->
+    <input class="mobile-navigation-toggler" type="checkbox" id="toggler-id">
+
+    <!-- BURGER MENU LINKS -->
+    <nav class="mobile-navigation-menu" aria-label="mob navigation menu">
+      <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+        <li>
+          <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+        </li>
+        <li>
+          <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+        </li>
+        <li>
+          <a href="#history-id" class="mobile-navigation-link" aria-label="link to history">History</a>
+        </li>
+        <li>
+          <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link to portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contacst-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+        </li>
+      </ul>
+
+      <!-- CROSS ICON -->
+      <label class="mobile-navigation-close" for="toggler-id" aria-label=" open close mobile navigation menu">
+        <!-- SVG ICON -->
+        <svg class="mobile-navigation-cross" aria-label="cross icon">
+          <use href="assets/sprites.svg#cross-icon"></use>
+        </svg>
+      </label>
+    </nav>
+  </div>
+
+  <!-- MAIN SECTION -->
   <main aria-label="main">
+
+    <!-- HOME -->
     <section class="home" aria-label="home section" id="home-id">
       <div class="container">
         <h1 class="home-title" aria-label="title">
@@ -49,6 +98,8 @@
         <img class="home-img" src="assets/webp/home.webp" alt="photo of Aivazovsky" />
       </div>
     </section>
+
+    <!-- ABOUT -->
     <section class="about" aria-label="about section" id="about-id">
       <div class="container">
         <h2 class="about-title" aria-label="about title">About</h2>
@@ -75,6 +126,8 @@
         </p>
       </div>
     </section>
+
+    <!-- HISTORY -->
     <section class="history-section" aria-label="history section" id="history-id">
       <div class="container">
         <h2 class="history-title" aria-label="history title">History</h2>
@@ -84,6 +137,8 @@
         </p>
       </div>
     </section>
+
+    <!-- PORTFOLIO -->
     <section class="portfolio" aria-label="portfolio section" id="portfolio-id">
       <div class="container">
         <h2 class="portfolio-title" aria-label="portfolio title">
@@ -105,15 +160,17 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="contacts" aria-label="contacts section" id="contacts-id">
     <div class="container">
       <h2 class="contacts-title">Contacts</h2>
+
       <button class="contacts-button" aria-label="contact button">
         <a href="https://ivanaivazovsky.arthive.com/" class="button-link" target="_blank"
           aria-label="link to site">ayvazovskiy.com</a>
       </button>
-      <address class="social" aria-label="social icons">
 
+      <address class="social" aria-label="social icons">
         <a href="https://youtube.com" target="_blank" aria-label="link to youtube">
           <svg class="social-icon" aria-label="youtube icon">
             <use href="assets/sprites.svg#youtube-icon"></use>
@@ -138,6 +195,7 @@
           </svg>
         </a>
       </address>
+
       <p class="contacts-info" aria-label="just for notice">
         More works you can see in these social networks
       </p>
