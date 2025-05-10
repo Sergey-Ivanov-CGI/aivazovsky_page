@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: var(--bg-main);
 }
+
 ul {
   list-style: none;
   margin: 0;
